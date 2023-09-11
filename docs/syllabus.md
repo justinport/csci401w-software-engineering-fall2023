@@ -77,7 +77,7 @@ ISBN: 9780135210642
 |                     | 4      | 11/6/23   | Insert Features or Grouping                                                                         | TBD by your User Stories                                                         |
 | **Feature Development**| 5   | 11/20/23  | Insert Features or Grouping                                                                         | TBD by your User Stories                                                    |
 |                     | 6      | 12/4/23   | Insert Features or Grouping                                                                         | TBD by your User Stories                                                      |
-| **Finalization**    | 8      | 12/18/24    | Final Presentation & Deliverable Preparation                                                        | Preparation and presentation of final course deliverables.                                           |
+| **Finalization**    | 7      | 12/18/24    | Final Presentation & Deliverable Preparation                                                        | Preparation and presentation of final course deliverables.                                           |
 
 
 ## Additional Resources
