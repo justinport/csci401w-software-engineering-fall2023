@@ -70,15 +70,15 @@ ISBN: 9780135210642
 
 | Phase               | Sprint | Ends      | Milestones                                                                                          | Primary Focus                                                                                               |
 |---------------------|--------|-----------|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| **Conceptual**      | 0      | 8/28/23   | Team Building & Foundational Tools                                                                  | Formation and ideation with understanding of course objectives.                                            |
-|                     | 1      | 9/11/23   | Product Vision & Mockups (User Experience)                                                          | Development of product vision, user stories, and MVP feature identification.                                |
-| **Foundational Features**    | 2      | 9/25/23   | Architecture & Technical Decisions                                                                  | Focus on software architecture, system design, and key technical decisions.                                |
-|                     | 3      | 10/9/23   | Insert Features or Grouping                                                                         | TBD                                                                                                         |
-|                     | 4      | 10/23/23  | Insert Features or Grouping                                                                         | Further development and refinement of user stories.                                                        |
-| **Feature Development**| 5   | 11/6/23   | Insert Features or Grouping                                                                         | Progression on user stories and feature implementation.                                                    |
-|                     | 6      | 11/20/23  | Insert Features or Grouping                                                                         | Continued work on feature development and user stories.                                                    |
-|                     | 7      | 12/4/23   | Insert Features or Grouping                                                                         | Final stages of feature development and user story completion.                                             |
-| **Finalization**    | 8      | 12/18/23  | Final Presentation & Deliverable Preparation                                                        | Preparation and presentation of final course deliverables.                                                 |
+| **Conceptual**      | 0      | 9/11/23   | Team Building & Foundational Tools                                                                  | Formation and ideation with understanding of course objectives.                                            |
+|                     | 1      | 9/25/23   | Product Vision & Mockups (User Experience)                                                          | Development of product vision, user stories, and MVP feature identification.                                |
+| **Foundational Features**    | 2      | 10/9/23   | Architecture & Technical Decisions                                                                  | Focus on software architecture, system design, and key technical decisions.                                |
+|                     | 3      | 10/23/23  | Insert Features or Grouping                                                                         | TBD by your User Stories                                                                                                          |
+|                     | 4      | 11/6/23   | Insert Features or Grouping                                                                         | TBD by your User Stories                                                         |
+| **Feature Development**| 5   | 11/20/23  | Insert Features or Grouping                                                                         | TBD by your User Stories                                                    |
+|                     | 6      | 12/4/23   | Insert Features or Grouping                                                                         | TBD by your User Stories                                                      |
+| **Finalization**    | 8      | 12/18/24    | Final Presentation & Deliverable Preparation                                                        | Preparation and presentation of final course deliverables.                                           |
+
 
 ## Additional Resources
 
