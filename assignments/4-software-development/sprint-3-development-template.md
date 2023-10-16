@@ -62,7 +62,31 @@ Your group will be evaluated on:
 - The quality and clarity of your demonstration.
 
 ## Tips and Considerations
-- Ensure all team members are familiar with the Agile methodology and Trello's features for maximum efficiency.
-- Regularly revisit and revise user stories if necessary. As development progresses, requirements might change.
-- Use labels, checklists, and comments within Trello to provide additional information, track subtasks, or clarify any doubts.
-- Schedule regular team meetings to discuss progress, address concerns, and ensure everyone is aligned with the project goals.
+
+1. **Reach Out to the Team**: 
+   - If you get stuck on a task, don’t be afraid to ask for help. Sometimes, just talking through the problem can lead to a solution. Pair programming can also be reintroduced as a method to address particularly challenging problems.
+
+2. **Break Down the Problem**: 
+   - If a task feels overwhelming or unclear, break it down into smaller tasks. Sometimes, working on smaller pieces can provide clarity for the larger issue.
+
+3. **Online Communities and Platforms**: 
+   - Websites like Stack Overflow, GitHub, and Reddit (specifically, subreddits related to programming) are fantastic resources. Chances are someone has faced a similar problem. Just remember to always understand the solutions you find, not just copy them.
+
+4. **Official Documentation**: 
+   - Always check the official documentation of the language, library, or framework you're using. They often contain examples, best practices, and detailed explanations.
+
+5. **Use Debugging Tools**: 
+   - Familiarize yourself with the debugging tools for your development environment. Properly setting breakpoints, inspecting variables, and walking through code step-by-step can help isolate issues.
+
+6. **Revisit the Basics**: 
+   - Sometimes, it's beneficial to review foundational concepts. Websites like W3Schools, MDN Web Docs (for web developers), and tutorial sites like GeeksforGeeks or TutorialsPoint can be useful.
+
+7. **Online Courses and Tutorials**: 
+   - Platforms like Coursera, Udemy, and Pluralsight offer courses on various topics. If there's a specific concept or technology that's consistently challenging, consider doing a deep dive with a dedicated course.
+
+8. **Code Examples and Templates**: 
+   - GitHub is a rich source of coding examples. Look for reputable repositories related to your problem domain. Additionally, platforms like CodePen for frontend code can be handy.
+
+9. **Take a Break**: 
+   - If you're consistently stuck on a problem, sometimes the best solution is to step away for a bit. A fresh perspective after a break can often lead to a solution.
+
