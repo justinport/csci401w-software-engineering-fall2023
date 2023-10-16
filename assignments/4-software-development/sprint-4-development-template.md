@@ -1,4 +1,4 @@
-# Software Engineering Project: Sprint 3 Software Development Assignment
+# Software Engineering Project: Sprint 4 Software Development Assignment
 
 ## Table of Contents
 - [Objective](#objective)
