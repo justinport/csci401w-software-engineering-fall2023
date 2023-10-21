@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Grid for Users</title>
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 50px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <!-- Add other fields as necessary -->
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- Rows will be populated here by the JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fetching the user data from the API
+            fetch('http://localhost:3000/users')
+                .then(response => response.json())
+                .then(data => populateTable(data))
+                .catch(error => console.error("Error fetching the user data:", error));
+
+            function populateTable(users) {
+                const tbody = document.getElementById("userTableBody");
+
+                // Clearing any existing data
+                tbody.innerHTML = "";
+
+                users.forEach(user => {
+                    const row = tbody.insertRow();
+
+                    // Assuming your user object has id, name, and email properties
+                    const idCell = row.insertCell(0);
+                    const nameCell = row.insertCell(1);
+                    const emailCell = row.insertCell(2);
+
+                    idCell.textContent = user.id;
+                    nameCell.textContent = user.name;
+                    emailCell.textContent = user.email;
+
+                    // Add other fields in a similar manner as necessary
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
