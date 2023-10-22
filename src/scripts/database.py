@@ -4,7 +4,7 @@ import pymysql
 host = "p3nlmysql1plsk.secureserver.net"
 port = 3306
 user = "sandbox"
-password = "Of^11i7o8"
+password = ""
 database = "sandbox"
 
 # Connect to the database
