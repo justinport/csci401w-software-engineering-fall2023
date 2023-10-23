@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basic DataGrid - jQuery EasyUI Demo</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="jquery-easyui/themes/default/easyui.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="jquery-easyui/themes/icon.css"
+    />
+    <link rel="stylesheet" type="text/css" href="jquery-easyui/demo/demo.css" />
+    <script type="text/javascript" src="jquery-easyui/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="jquery-easyui/jquery.easyui.min.js"
+    ></script>
+    <script type="text/javascript">
+      function getUserFoods(userId) {
+        // Make an API call to fetch the foods for the selected user
+        $('#foodsDg').datagrid({
+        url: 'http://localhost:3000/foods/' + userId,
+        method: 'get'
+    });
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Basic DataGrid</h2>
+    <p>The DataGrid is created from markup, no JavaScript code needed.</p>
+    <div style="margin: 20px 0"></div>
+
+    <table
+      class="easyui-datagrid"
+      title="Users DataGrid"
+      style="width: 700px; height: 250px"
+      data-options="singleSelect:true,collapsible:true,url:'http://localhost:3000/users',method:'get',onClickRow:function(index,row){getUserFoods(row.id);}"
+    >
+      <thead>
+        <tr>
+          <th data-options="field:'id',width:80">ID</th>
+          <th data-options="field:'name',width:100">Name</th>
+          <th data-options="field:'email',width:180,align:'right'">Email</th>
+        </tr>
+      </thead>
+    </table>
+
+    <div style="margin: 20px 0"></div>
+
+    <h2>User's Favorite Foods</h2>
+    <table
+      id="foodsDg"
+      class="easyui-datagrid"
+      title="Foods DataGrid"
+      style="width: 700px; height: 250px"
+      data-options="singleSelect:true,collapsible:true"
+    >
+      <thead>
+        <tr>
+          <th data-options="field:'id',width:80">Food ID</th>
+          <th data-options="field:'food_name',width:250">Food Name</th>
+          <!-- Add other fields for favorite foods as required -->
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>
