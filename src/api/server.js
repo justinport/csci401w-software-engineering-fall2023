@@ -43,7 +43,7 @@ app.listen(port, () => {
 });
 
 // IIFE (Immediately Invoked Function Expression) for running asynchronous code
-(async () => {
+/*(async () => {
   try {
     // Testing the FoodDataService by fetching data for 'cheddar cheese'
     const data = await foodDataService.searchFood(
@@ -96,4 +96,4 @@ app.listen(port, () => {
       });
     });
   });
-})();
+})();*/
