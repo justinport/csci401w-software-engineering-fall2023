@@ -1,36 +1,10 @@
 console.log("Loading users.js...");
 
-const express = require('express');
+const express = require("express");
+const sqlite3 = require("sqlite3").verbose(); // Require the sqlite3 module
 const router = express.Router();
 
-// Sample user data
-const users = [
-    {
-        id: 1,
-        name: 'John Doe',
-        email: 'john.doe@example.com'
-    },
-    {
-        id: 2,
-        name: 'Jane Smith',
-        email: 'jane.smith@example.com'
-    },
-    {
-        id: 3,
-        name: 'Alice Johnson',
-        email: 'alice.johnson@example.com'
-    },
-    {
-        id: 4,
-        name: 'Bob Brown',
-        email: 'bob.brown@example.com'
-    },
-    {
-        id: 5,
-        name: 'Charlie Wilson',
-        email: 'charlie.wilson@example.com'
-    }
-];
+const db_path = "../data/users.db"; // The path to your SQLite database
 
 /**
  * @swagger
@@ -52,8 +26,37 @@ const users = [
  *               email:
  *                 type: string
  */
-router.get('/', (req, res) => {
-    res.json(users);
+router.get("/", (req, res) => {
+  // Create a connection to the SQLite database
+  const db = new sqlite3.Database(db_path, sqlite3.OPEN_READONLY, (err) => {
+    if (err) {
+      console.error("Error opening the SQLite database:", err.message);
+      res.status(500).json({ error: "Internal server error" });
+      return;
+    }
+  });
+
+  // Fetch users from the database
+  db.all("SELECT id, name, email FROM users", [], (err, rows) => {
+    if (err) {
+      console.error(
+        "Error fetching users from the SQLite database:",
+        err.message
+      );
+      res.status(500).json({ error: "Internal server error" });
+      return;
+    }
+
+    // Close the database connection
+    db.close((err) => {
+      if (err) {
+        console.error("Error closing the SQLite database:", err.message);
+      }
+    });
+
+    // Send the fetched users as a response
+    res.json(rows);
+  });
 });
 
 module.exports = router;
