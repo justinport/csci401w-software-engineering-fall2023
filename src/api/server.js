@@ -1,9 +1,6 @@
 // Logging the start of the server script
 console.log("Executing server.js...");
-
-// Importing necessary modules and configurations
 const express = require("express");
-const bodyParser = require("body-parser");
 const mainRoutes = require("./routes");
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
@@ -16,8 +13,8 @@ const mysql = require("mysql2");
 const app = express();
 const port = 3000;
 
-// Middleware to parse JSON requests
-app.use(bodyParser.json());
+// Middleware to parse JSON requests using Express's built-in parser
+app.use(express.json()); 
 
 // Middleware to handle Cross-Origin Resource Sharing (CORS) issues
 app.use(
@@ -41,6 +38,8 @@ app.listen(port, () => {
   console.log(`Server started on http://localhost:${port}`);
   console.log(`Swagger docs available on http://localhost:${port}/api-docs`);
 });
+
+
 
 // IIFE (Immediately Invoked Function Expression) for running asynchronous code
 /*(async () => {

@@ -18,7 +18,8 @@ Dive deep into the API aspect of the project, understanding the tools and framew
 
 - [FAQ - Frequently Asked Questions](api/faq.md) 
 - [NPM - Details and instructions about npm](api/npm.md)
-- [Quickstart Guide - Get started with the API segment](api/quickstart.md)
+- [Quickstart Guide - Get started with the API segment](api/REST.md)
+- [REST APIS](api/quickstart.md)
 
 ## UI Documentation
 
